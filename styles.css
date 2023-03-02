@@ -1,0 +1,61 @@
+.header, .container {
+    display: flex;
+    justify-content: center;
+}
+h1 {
+    font-size: 60px;
+    background: linear-gradient(to left, #f9e006, #fbeb06);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 1px black;
+}
+.inputField {
+    padding: 10px;
+    width: 40%;
+    border: none;
+}
+.btn {
+    padding: 20px;
+    background-color: #f9ff7d;
+    border: none;
+}
+body {
+    background-image: url(pen.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    background-position: center;
+    background-color: #f5dce0;
+}
+.toDoAdd {
+    background: #f2afd8;
+    list-style-type: none;
+    height: 60px;
+    width: 50%;
+    text-align: center;
+    font-size: 20px;
+    border-bottom: 1px solid #fff;
+}
+.toDoContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.toDoCompleted {
+    background: #75ccfe;
+    color: black;
+    font-weight: bold;
+    text-decoration: line-through;
+    transition: all 1s ease;
+}
+
+@media all and (max-width: 800px){
+    h1 {
+        font-size: 40px;
+    }
+}
+@media all and (max-width: 500px){
+    h1 {
+        font-size: 30px;
+    }
+}
